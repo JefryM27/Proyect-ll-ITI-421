@@ -10,7 +10,7 @@ if (isset($_GET['rideId'])) {
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute([$rideId])) {
         //Redirect user back to dashboard after deletion
-        header("Location: /pages/rides/dashboard.php");
+        header("Location: /pages/dashboard.php");
         exit();
     } else {
         //If there is an error in deletion, display an error message

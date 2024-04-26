@@ -2,6 +2,7 @@
 require_once ($_SERVER['DOCUMENT_ROOT'] . '/utils/database.php');
 $pdo = get_pdo_connection();
 
+//capture the values
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rideId = $_POST['rideId'];
     $rideName = $_POST['rideName'];
@@ -27,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Ejecutar la consulta
     if ($stmt->execute([$rideName, $startFrom, $endTo, $description, $departure, $arrival, $days, $rideId])) {
-        header("Location: /pages/rides/dashboard.php");
+        header("Location: /pages/dashboard.php");
         exit();
     } else {
         // Manejar errores si la consulta no se ejecuta correctamente

@@ -1,0 +1,113 @@
+/* Styling for the background and text of the page */
+body {
+    background-color: #ffffff;
+    color: #000000;
+
+
+
+    /* Styling for cards with rounded edges and soft shadow */
+    .card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* White background for the body of the cards */
+    .card-body {
+        background-color: #ffffff;
+    }
+
+    /* Background image for the page with opacity */
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('../img/Bandera.jpg');
+        background-repeat: no-repeat;/ background-size: cover;
+        background-position: center;
+        opacity: 0.4;
+        /* Opacity to soften visual impact */
+    }
+
+    /* Customization of the body for the page */
+    .custom-body {
+        background-color: #f8f9fa;
+        /* Slightly gray background */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Styles for navigation and button grouping */
+    .navigation {
+        font-size: 16px;
+    }
+
+    .btn-group {
+        margin-bottom: 20px;
+    }
+
+    /* Rounded borders for buttons within a group */
+    .btn-group .btn {
+        border-radius: 30px;
+    }
+
+    /* Style for disabled buttons within a group */
+    .btn-group .btn-primary.disabled,
+    .btn-group .btn-primary:disabled {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    /* Bold font for form labels */
+    .form-label {
+        font-weight: bold;
+    }
+
+    /* Rounded borders for form fields */
+    .form-control {
+        border-radius: 10px;
+    }
+
+    /* Maximum width for text fields */
+    input[type="text"]:not(#description) {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Specific width for the description field */
+    #description {
+        width: 100%;
+        max-width: 760px;
+    }
+
+    /* User profile and link to profile, strategically positioned */
+    .user-profile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 40px;
+        margin-top: 350px;
+        font-size: 20px;
+    }
+
+    /* Style for user profile links */
+    .user-profile a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Specific color for orange text */
+    .text-orange {
+        color: #FFA500;
+    }
+
+    /* Specific style for user images */
+    .user-image {
+        width: 40px;
+        margin-left: 10px;
+    }
+}

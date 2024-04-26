@@ -1,20 +1,18 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/database.php');
-$pdo = get_mysql_connection();
+$pdo = get_pdo_connection();
 
-// Verificar si se recibió un ID de viaje en la URL
+//Check if a ride ID was received in the URL
 if (isset($_GET['rideId'])) {
     $rideId = $_GET['rideId'];
-    
-    // Preparar la consulta SQL para obtener la información del viaje
+    //Prepare the SQL query to obtain the ride information
     $sql = "SELECT * FROM rides WHERE id = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$rideId]);
     $ride = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // Verificar si se encontró el viaje
+    //Check if the ride was found
     if ($ride) {
-        // Asignar valores de la base de datos a variables
         $rideName = $ride['ride_name'];
         $startFrom = $ride['start_from'];
         $endTo = $ride['end_to'];
@@ -23,13 +21,13 @@ if (isset($_GET['rideId'])) {
         $arrival = $ride['arrival_time'];
         $days = explode(',', $ride['days']);
     } else {
-        // Si no se encontró el viaje
-        echo "Error: El viaje no se encontró.";
+        //If the ride was not found
+        echo "Error: Ride not found.";
         exit();
     }
 } else {
-    // Si no se proporcionó un ID de viaje en la URL
-    echo "Error: ID de viaje no proporcionado.";
+    //If no ride ID was provided in the URL
+    echo "Error: Ride ID not provided.";
     exit();
 }
 ?>
