@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to TicoRide.com</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home-style.css"> <!-- Vincula el archivo CSS externo -->
+</head>
+
+<body>
+  <!-- Container Fluid -->
+  <div class="container-fluid">
+    <!-- Row with vertical and horizontal alignment -->
+    <div class="row align-items-center justify-content-center h-100">
+      <div class="col-12">
+        <!-- Page Title -->
+        <h1 class="text-center">Welcome to TicoRide.com</h1>
+        <!-- Subtitle -->
+        <div class="titulo text-center mt-5">Search for a Ride</div>
+        <!-- Card for search form -->
+        <div class="card mt-5 mb-5">
+          <div class="card-body">
+            <!-- Search form -->
+            <form action="welcome-to-ticoride.com" method="post" class="form-inline justify-content-center">
+              <!-- From input -->
+              <div class="form-group mr-3">
+                <label for="start" class="mr-2">From:</label>
+                <input type="text" id="start" class="form-control form-control-sm form-control-custom"
+                  placeholder="Input text">
+              </div>
+              <!-- To input -->
+              <div class="form-group mr-3">
+                <input type="date" id="end" class="form-control form-control-sm form-control-custom">
+                <input type="date" class="form-control form-control-sm form-control-custom">
+              </div>
+              <!-- Search button -->
+              <button type="button" class="btn btn-primary">Find my Ride</button>
+            </form>
+          </div>
+        </div>
+
+        <p class="text-center">Results for Rides that match your criteria.</p>
+        <!-- Table for displaying ride results -->
+        <table class="table table-bordered mt-5 mx-auto" style="max-width: 800px;">
+          <thead>
+            <tr style="background-color: white;">
+              <th>User</th>
+              <th>Start</th>
+              <th>End</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sample ride results -->
+            <tr>
+              <td>Jefry</td>
+              <td>Santa Rosa</td>
+              <td>Ciudad Quesada</td>
+              <td>View</td>
+            </tr>
+            <tr>
+              <td>Carlos</td>
+              <td>La Rotonda</td>
+              <td>Ciudad Quesada</td>
+              <td>View</td>
+            </tr>
+            <tr>
+              <td>Jairo</td>
+              <td>Upala</td>
+              <td>Ciudad Quesada</td>
+              <td>View</td>
+            </tr>
+            <tr>
+              <td>Sebastian</td>
+              <td>Cedral</td>
+              <td>Ciudad Quesada</td>
+              <td>View</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Login button -->
+        <div class="text-center"> <!-- Contenedor con clase text-center -->
+          <a href="login.html" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

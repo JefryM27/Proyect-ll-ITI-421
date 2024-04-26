@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Styles/settings-style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="mt-2">
+      <img src="Images/Image.png" alt="Image 1" class="img-fluid">
+    </div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="edit-rides.php">Rides</a></li>
+        <li class="breadcrumb-item"><a href="settings.html">Settings</a></li>
+      </ol>
+    </nav>
+
+    <h1 class="mt-4">Settings</h1>
+    <a href="pagina3.html" class="text-muted mt-2">Dashboard > Settings</a>
+
+    <div class="d-flex justify-content-end mt-2">
+      <p class="mr-3"> <span>Welcome: </span> JefryM27</p> <img src="Images/user.png" alt="Image 2" class="img-fluid">
+    </div>
+
+    <!-- Input Fields -->
+    <div class="p-2 mt-2">
+      <p>Full Name:</p>
+      <input type="text" class="form-control campo-pequeno" id="full_name" name="full_name" value="Jefry Morera">
+    </div>
+
+    <div class="p-2 mt-2">
+      <p>Speed Average:</p>
+      <input type="text" class="form-control campo-pequeno" id="speed_average" name="speed_average" value="80 km/h">
+    </div>
+
+    <div class="p-2 mt-2">
+      <p>About Me:</p>
+      <input type="text" class="form-control campo-pequeno" id="end_location" name="end_location" value="Input text" />
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button type="button" class="btn btn-secondary">Cancel</button>
+      <button type="button" class="btn btn-primary">Save</button>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.wrap.min.js"></script>
+</body>
+
+</html>

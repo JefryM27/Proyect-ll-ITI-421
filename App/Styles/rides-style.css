@@ -1,0 +1,28 @@
+/* Styling for small input fields */
+.campo-pequeno {
+  font-size: 15px; 
+  width: 200px; 
+}
+
+/* Styling for medium-sized input fields */
+.campo-mediano {
+  font-size: 15px; 
+  width: 300px; 
+  height: 100px; 
+}
+  
+/* Styling for the "When" title */
+#when-title {
+  font-size: 24px; 
+}
+
+/* Adds padding and margin to elements with the class "p-2" */
+.p-2 {
+  margin-bottom: 5px; 
+  padding-bottom: 5px; 
+}
+
+/* Adds padding to the container */
+.container {
+  padding: 10px; 
+}
